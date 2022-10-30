@@ -1,0 +1,21 @@
+{
+    "debug": false,
+    "tileDirectory": "images/tiles",
+    "iconDirectory": "images/icons",
+    "showIdentifiers": true,
+    "groupPlayers": true, // Wether the map should group players together into "clusters" or not.
+    "defaults": { // If a server doesn't have the key-value set, it will fallback to these values
+        "ip": "74.91.125.236", // Make sure this is the PUBLIC IP of the FIVEM server
+        "socketPort": "30120" // Set to the port that you set in the "socket_port" convar (if different to the one in the config)
+    },
+    "servers": {
+        "Patrol Server One": {}, // normal patrol server
+    },
+    "maps": [
+        {
+            "name": "Postal",
+            "url": "{tileDirectory}/postal/minimap_sea_{y}_{x}.png",
+            "minZoom": -5 // Since this is 3 times bigger, just remove 3 from the default minZoom
+        },
+    ]
+}
